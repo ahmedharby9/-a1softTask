@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree} from '@angular/router';
 import {Observable} from 'rxjs';
-import {CallApiService} from '../../../../../parentTask/parent-task/src/app/services/call-api.service';
+import {CallApiService} from "../services/call-api.service";
 
 @Injectable({
   providedIn: 'root'

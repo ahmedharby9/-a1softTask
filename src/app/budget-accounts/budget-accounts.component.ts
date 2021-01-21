@@ -32,8 +32,8 @@ export class BudgetAccountsComponent implements OnInit, OnChanges {
   @Input() data: any;
   @Output() onClose: EventEmitter<any> = new EventEmitter();
   public tableSchema: any[];
-  public accounts: any[];
-  public selectedAccount: any;
+  public accounts: Account[];
+  public selectedAccount: Account;
 
   constructor(private callApi: CallApiService, private getObjectsWithPipe: GetObjectsWithPipe) {
   }

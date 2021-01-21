@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {CallApiService} from '../services/call-api.service';
+import {Budget} from "./budget";
 
 @Component({
   selector: 'app-budgets',
@@ -22,8 +23,8 @@ export class BudgetsComponent implements OnInit {
      - onSelectBudget(event) => its a void function and and it have single argument for initial budget info
                                 and it called http service to load full budget info
   *** */
-  public budgets: any[] = [];
-  public currentSelectedBudget: any;
+  public budgets: Budget[] = [];
+  public currentSelectedBudget: Budget;
   public displayBudgetDetails: boolean;
   public displayBudgetAccounts: boolean;
 
