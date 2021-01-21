@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {CallApiService} from '../services/call-api.service';
 import {GetObjectsWithPipe} from '../pipes/get-objects-with.pipe';
+import {Account} from "./account";
 
 @Component({
   selector: 'app-budget-accounts',
@@ -33,7 +34,7 @@ export class BudgetAccountsComponent implements OnInit, OnChanges {
   @Output() onClose: EventEmitter<any> = new EventEmitter();
   public tableSchema: any[];
   public accounts: Account[];
-  public selectedAccount: Account;
+  public selectedAccount: any;
 
   constructor(private callApi: CallApiService, private getObjectsWithPipe: GetObjectsWithPipe) {
   }
